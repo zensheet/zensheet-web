@@ -4,32 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zensheet | Organize with Peace, Grow with Ease</title>
+    <title>ZenSheet | Organize with Peace, Grow with Ease</title>
     <meta name="description"
-        content="Temukan Digital Planner, Kalkulator Finansial, dan Spreadsheet premium di Zensheet. Solusi produktivitas yang tenang dan efisien.">
+        content="ZenSheet - Organize with Peace, Grow with Ease. Temukan Digital Planner, Kalkulator Finansial, dan Worksheet terbaik untuk produktivitas yang seimbang.">
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
         rel="stylesheet">
 
+    <!-- Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo_v2.jpg">
 </head>
 
 <body>
 
+    <!-- Header -->
     <header class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">Zensheet<span class="dot">.</span></a>
+            <a href="#" class="logo-brand">
+                <img src="images/logo_icon.png" alt="ZenSheet Logo" class="logo-icon">
+                <span class="logo-text">ZenSheet<span class="dot">.</span></span>
+            </a>
 
             <nav class="nav-links" id="nav-links">
-                <a href="#products">Koleksi</a>
-                <a href="#features">Filosofi</a>
+                <a href="#products">Produk</a>
+                <a href="#features">Keunggulan</a>
                 <a href="#faq">FAQ</a>
-                <a href="mailto:zensheet.id@gmail.com" class="btn-clean">Kontak</a>
+                <a href="#contact" class="btn-clean">Kontak</a>
             </nav>
 
             <button class="menu-toggle" aria-label="Toggle Menu">
@@ -39,79 +48,138 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
             <div class="container hero-content">
-                <span class="pill-label">Zen Collection 2026</span>
-                <h1>Organize with <span class="accent-text">Peace</span>,<br>Grow with Ease.</h1>
-                <p class="hero-sub">Koleksi tools digital premium yang dirancang untuk membantu Anda mengelola hidup dan keuangan dengan lebih tenang.</p>
-                <div class="hero-buttons">
+                <span class="pill-label fade-in-up" style="animation-delay: 0.1s;">New Collection 2026</span>
+                <h1 class="fade-in-up" style="animation-delay: 0.2s;">Organize with Peace,<br>Grow with <span
+                        class="accent-text">Ease</span>.</h1>
+                <p class="hero-sub fade-in-up" style="animation-delay: 0.3s;">Koleksi tools digital premium untuk
+                    membantu Anda menciptakan keseimbangan dalam karir, keuangan, dan kehidupan.</p>
+                <div class="hero-buttons fade-in-up" style="animation-delay: 0.4s;">
                     <a href="#products" class="btn-primary">Lihat Koleksi</a>
-                    <a href="#features" class="btn-secondary">Pelajari Filosofi</a>
+                    <a href="#features" class="btn-secondary">Pelajari Lebih Lanjut</a>
                 </div>
             </div>
         </section>
 
+        <!-- Product Grid -->
         <section id="products" class="products-section">
             <div class="container">
                 <div class="section-header text-center">
                     <h2>Produk Pilihan</h2>
-                    <p>Designed for focus, clarity, and mindfulness.</p>
+                    <p>Designed for clarity and calmness.</p>
                 </div>
 
                 <div class="product-grid">
+                    <!-- Product 1: UPS Rate Calculator -->
                     <article class="product-card">
                         <div class="card-image">
-                            <img src="images/planner-mockup.png" alt="Zensheet Digital Planner" loading="lazy">
+                            <img src="images/cover_ups_calc.png?v=2" alt="UPS Express Rate Calculator" loading="lazy">
                         </div>
                         <div class="card-body">
-                            <span class="category">Productivity</span>
-                            <h3>Zen Life Planner 2026</h3>
-                            <p>Sistem perencanaan minimalis untuk mencapai target tahunan tanpa rasa cemas.</p>
+                            <span class="category">Logistics Tool</span>
+                            <h3>UPS Express Rate Calculator</h3>
+                            <p><strong>Hitung Cepat, Anti Pusing!</strong> Kalkulator otomatis untuk estimasi ongkos
+                                kirim presisi & hindari selisih harga.</p>
+                            <ul class="product-benefits">
+                                <li>✅ Auto Input Basic Rate & Simulasi Diskon</li>
+                                <li>✅ Deteksi Remote Area & Cek Service</li>
+                                <li>✅ Notif Limit Berat/Dimensi (Anti Surcharge)</li>
+                                <li>✅ Estimasi Duty Tax & Biaya Kurir (Import)</li>
+                            </ul>
                             <div class="price-row">
-                                <span class="price">Rp 149.000</span>
-                                <span class="old-price">Rp 299.000</span>
+                                <span class="price">Rp 30.000</span>
                             </div>
                             <div class="card-actions">
-                                <a href="#" target="_blank" class="btn-buy">Cek di Etsy</a>
-                                <a href="https://wa.me/6281234567890?text=Halo%20Zensheet,%20saya%20tertarik%20dengan%20Zen%20Planner"
+                                <a href="https://lynk.id/exportimport/10y7446xd1er" target="_blank" class="btn-buy">Beli
+                                    Sekarang</a>
+                                <a href="https://wa.me/6281290650963?text=Halo%20ZenSheet,%20saya%20tertarik%20UPS%20Rate%20Calculator"
                                     target="_blank" class="btn-ask"><i data-feather="message-circle"></i></a>
                             </div>
                         </div>
                     </article>
 
+                    <!-- Product 2: Import Duty & Tax Calculator -->
                     <article class="product-card">
                         <div class="card-image">
-                            <img src="images/calc-icon.png" alt="Zensheet Calculator" loading="lazy">
+                            <img src="images/cover_tax_calc.png?v=2" alt="Import Duty & Tax Calculator Indonesia"
+                                loading="lazy">
                         </div>
                         <div class="card-body">
-                            <span class="category">Finance</span>
-                            <h3>Zen-Financial Sheets</h3>
-                            <p>Spreadsheet otomatis untuk melacak pengeluaran dan proyeksi masa depan secara akurat.</p>
+                            <span class="category">Logistics Tool</span>
+                            <h3>Duty & Tax Calculator (Indonesia)</h3>
+                            <p><strong>Akurat & Terkoneksi INSW!</strong> Hitung Bea Masuk & Pajak Impor dengan database
+                                HS Code terlengkap.</p>
+                            <ul class="product-benefits">
+                                <li>✅ Database HS Code Lengkap (BTKI 2022)</li>
+                                <li>✅ Koneksi INSW Real-Time (Cek Lartas & Tarif)</li>
+                                <li>✅ Simulasi Fleksibel (Personal/PT, NPWP/Non)</li>
+                                <li>✅ Hitung Biaya Kurir (Handling, Warehouse, dll)</li>
+                            </ul>
                             <div class="price-row">
-                                <span class="price">Rp 99.000</span>
+                                <span class="price">Rp 30.000</span>
                             </div>
                             <div class="card-actions">
-                                <a href="#" target="_blank" class="btn-buy">Cek di Etsy</a>
-                                <a href="https://wa.me/6281234567890?text=Halo%20Zensheet,%20mau%20tanya%20Financial%20Sheets"
+                                <a href="https://lynk.id/exportimport/dgwkowv6kkoo" target="_blank" class="btn-buy">Beli
+                                    Sekarang</a>
+                                <a href="https://wa.me/6281290650963?text=Halo%20ZenSheet,%20mau%20tanya%20Tax%20Calculator"
                                     target="_blank" class="btn-ask"><i data-feather="message-circle"></i></a>
                             </div>
                         </div>
                     </article>
 
+                    <!-- Product 3: SalesCRM Offline -->
                     <article class="product-card">
                         <div class="card-image">
-                            <img src="images/ebook-cover.png" alt="Minimalist Workspace" loading="lazy">
+                            <img src="images/cover_sales_crm_v3.png" alt="SalesCRM Offline" loading="lazy">
                         </div>
                         <div class="card-body">
-                            <span class="category">System</span>
-                            <h3>Mindful Workspace Kit</h3>
-                            <p>Template Notion dan sistem organisasi file untuk ruang kerja digital yang lebih bersih.</p>
+                            <span class="category">Business Tool</span>
+                            <h3>SalesCRM Offline</h3>
+                            <p><strong>Privasi 100% Aman!</strong> Aplikasi CRM ringan tanpa login & tanpa biaya
+                                langganan selamanya.</p>
+                            <ul class="product-benefits">
+                                <li>✅ 100% Offline (Data Tersimpan Aman di Lokal)</li>
+                                <li>✅ Data Privat & Rahasia (Anti Bocor)</li>
+                                <li>✅ Tanpa Login & Tanpa Biaya Langganan</li>
+                                <li>✅ Aktivasi 1x Bayar (Lifetime)</li>
+                            </ul>
                             <div class="price-row">
-                                <span class="price">Rp 79.000</span>
+                                <span class="price">Rp 50.000</span>
                             </div>
                             <div class="card-actions">
-                                <a href="#" target="_blank" class="btn-buy">Cek di Etsy</a>
-                                <a href="https://wa.me/6281234567890?text=Halo%20Zensheet,%20tanya%20Workspace%20Kit"
+                                <a href="https://lynk.id/exportimport/yklmy1llv65j" target="_blank" class="btn-buy">Beli
+                                    Sekarang</a>
+                                <a href="https://wa.me/6281290650963?text=Halo%20ZenSheet,%20tertarik%20SalesCRM%20Offline"
+                                    target="_blank" class="btn-ask"><i data-feather="message-circle"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 4: Ebook Padel Import -->
+                    <article class="product-card">
+                        <div class="card-image">
+                            <img src="images/cover_ebook_padel_v3.png" alt="Panduan Impor Raket Padel" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <span class="category">Ebook Guide</span>
+                            <h3>Panduan Impor Raket Padel</h3>
+                            <p><strong>Impor Legal, Profit Maksimal.</strong> Panduan step-by-step lolos Jalur Hijau &
+                                hitung bea masuk akurat.</p>
+                            <ul class="product-benefits">
+                                <li>✅ Kuasai HS Code 9506.59 (Tarif Akurat)</li>
+                                <li>✅ Hitung BM & PDRI Sesuai PMK Terbaru</li>
+                                <li>✅ Strategi Lolos Jalur Hijau Bea Cukai</li>
+                                <li>✅ Tips Hindari Lartas & Denda Import</li>
+                            </ul>
+                            <div class="price-row">
+                                <span class="price">Rp 30.000</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://lynk.id/exportimport/qxvkrmpe8lrv" target="_blank" class="btn-buy">Beli
+                                    Sekarang</a>
+                                <a href="https://wa.me/6281290650963?text=Halo%20ZenSheet,%20tanya%20Ebook%20Impor%20Padel"
                                     target="_blank" class="btn-ask"><i data-feather="message-circle"></i></a>
                             </div>
                         </div>
@@ -120,33 +188,35 @@
             </div>
         </section>
 
+        <!-- Features -->
         <section id="features" class="features-section">
             <div class="container">
                 <div class="features-grid">
                     <div class="feature-item">
-                        <i data-feather="feather"></i>
-                        <h4>Minimalist Design</h4>
-                        <p>Fokus pada apa yang penting tanpa gangguan visual yang berlebihan.</p>
+                        <i data-feather="download"></i>
+                        <h4>Instant Clarity</h4>
+                        <p>Akses langsung ke tools Anda setelah pembayaran. Mulai menata hidup detik ini juga.</p>
                     </div>
                     <div class="feature-item">
-                        <i data-feather="smile"></i>
-                        <h4>User Friendly</h4>
-                        <p>Mudah digunakan bahkan bagi Anda yang baru pertama kali menggunakan tools digital.</p>
+                        <i data-feather="smartphone"></i>
+                        <h4>Anywhere Peace</h4>
+                        <p>Desain responsif yang indah, akses dari mana saja dengan perasaan tenang.</p>
                     </div>
                     <div class="feature-item">
-                        <i data-feather="globe"></i>
-                        <h4>Global Standard</h4>
-                        <p>Kualitas produk yang dirancang untuk memenuhi standar pasar internasional.</p>
+                        <i data-feather="shield"></i>
+                        <h4>Secure & Trusted</h4>
+                        <p>Transaksi aman via Lynk.id. Privasi dan keamanan data Anda adalah prioritas.</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container footer-content">
             <div class="footer-brand">
-                <h4>Zensheet<span class="dot">.</span></h4>
+                <h4>ZenSheet</h4>
                 <p>Organize with Peace, Grow with Ease.</p>
             </div>
             <div class="footer-links">
@@ -155,7 +225,7 @@
                 <a href="https://instagram.com" target="_blank">Instagram</a>
             </div>
             <div class="copyright">
-                &copy; 2026 Zensheet. All rights reserved.
+                &copy; 2026 ZenSheet. All rights reserved.
             </div>
         </div>
     </footer>
