@@ -103,10 +103,48 @@
                         </div>
                     </article>
 
+                    <!-- Product New: Sales Dashboard Tracker -->
+                    <article class="product-card" style="border: 2px solid #2563eb;">
+                        <div class="card-image" onclick="openGallery('sales', 0)"
+                            style="cursor: pointer; position: relative;" title="Lihat Preview">
+                            <img src="images/cover_sales_dashboard.png" alt="Sales Dashboard Tracker" loading="lazy">
+                            <div
+                                style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; display: flex; align-items: center; gap: 4px;">
+                                <i data-feather="image" style="width: 12px; height: 12px;"></i> 4 Foto
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="category" style="color: #2563eb;">Excel Tool</span>
+                            <h3>Sales Dashboard Tracker</h3>
+                            <p><strong>Analisa Sales Level Manager!</strong> Dashboard interaktif untuk visualisasi data
+                                sales, forecast pipeline, dan audit performa tim.</p>
+                            <ul class="product-benefits">
+                                <li>✅ 100% Offline & Privasi Aman (Basis Browser)</li>
+                                <li>✅ <strong>Cukup Drop & Drag (Template Excel Disediakan)</strong></li>
+                                <li>✅ Fitur Sales Pipeline & Forecast Mode</li>
+                                <li>✅ Audit Active Customer & Logo Vendor Otomatis</li>
+                            </ul>
+                            <div class="price-row">
+                                <span class="price" style="color: #2563eb;">Rp 50.000</span>
+                            </div>
+                            <div class="card-actions">
+                                <a href="http://lynk.id/exportimport/dvog5xnjq9wx" target="_blank" class="btn-buy"
+                                    style="background-color: #2563eb;">Beli Sekarang</a>
+                                <a href="https://wa.me/6281290650963?text=Halo%20ZenSheet,%20tertarik%20Sales%20Dashboard%20Tracker"
+                                    target="_blank" class="btn-ask"><i data-feather="message-circle"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
                     <!-- Product 1: UPS Rate Calculator -->
                     <article class="product-card">
-                        <div class="card-image">
+                        <div class="card-image" onclick="openGallery('ups', 0)"
+                            style="cursor: pointer; position: relative;" title="Lihat Preview">
                             <img src="images/cover_ups_calc.png?v=2" alt="UPS Express Rate Calculator" loading="lazy">
+                            <div
+                                style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; display: flex; align-items: center; gap: 4px;">
+                                <i data-feather="image" style="width: 12px; height: 12px;"></i> 2 Foto
+                            </div>
                         </div>
                         <div class="card-body">
                             <span class="category">Logistics Tool</span>
@@ -133,9 +171,14 @@
 
                     <!-- Product 2: Import Duty & Tax Calculator -->
                     <article class="product-card">
-                        <div class="card-image">
+                        <div class="card-image" onclick="openGallery('tax', 0)"
+                            style="cursor: pointer; position: relative;" title="Lihat Preview">
                             <img src="images/cover_tax_calc.png?v=2" alt="Import Duty & Tax Calculator Indonesia"
                                 loading="lazy">
+                            <div
+                                style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; display: flex; align-items: center; gap: 4px;">
+                                <i data-feather="image" style="width: 12px; height: 12px;"></i> 2 Foto
+                            </div>
                         </div>
                         <div class="card-body">
                             <span class="category">Logistics Tool</span>
@@ -162,8 +205,13 @@
 
                     <!-- Product 3: SalesCRM Offline -->
                     <article class="product-card">
-                        <div class="card-image">
+                        <div class="card-image" onclick="openGallery('crm', 0)"
+                            style="cursor: pointer; position: relative;" title="Lihat Preview">
                             <img src="images/cover_sales_crm_v3.png" alt="SalesCRM Offline" loading="lazy">
+                            <div
+                                style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; display: flex; align-items: center; gap: 4px;">
+                                <i data-feather="image" style="width: 12px; height: 12px;"></i> 7 Foto
+                            </div>
                         </div>
                         <div class="card-body">
                             <span class="category">Business Tool</span>
@@ -292,6 +340,34 @@
                     Kami hanya menggunakan data ini untuk pengiriman ebook dan verifikasi akses
                 </p>
             </form>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="modal-overlay">
+        <div class="modal-content gallery-content"
+            style="max-width: 900px; padding: 0; background: transparent; box-shadow: none;">
+            <button class="modal-close" onclick="closeGallery()"
+                style="color: white; right: 0; top: -40px; font-size: 2rem;">&times;</button>
+
+            <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+                <button onclick="prevImage()"
+                    style="position: absolute; left: -50px; background: rgba(255,255,255,0.2); border: none; color: white; padding: 10px; cursor: pointer; border-radius: 50%; hover: {background: rgba(255,255,255,0.4)};">
+                    <i data-feather="chevron-left" style="width: 32px; height: 32px;"></i>
+                </button>
+
+                <img id="galleryImage"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Preview"
+                    style="max-height: 80vh; width: auto; max-width: 100%; border-radius: 8px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);">
+
+                <button onclick="nextImage()"
+                    style="position: absolute; right: -50px; background: rgba(255,255,255,0.2); border: none; color: white; padding: 10px; cursor: pointer; border-radius: 50%;">
+                    <i data-feather="chevron-right" style="width: 32px; height: 32px;"></i>
+                </button>
+            </div>
+            <div style="text-align: center; color: white; margin-top: 1rem; font-weight: 500;">
+                <span id="galleryCounter">1 / 4</span>
+            </div>
         </div>
     </div>
 

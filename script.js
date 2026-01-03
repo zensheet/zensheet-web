@@ -108,3 +108,91 @@ function triggerDownload() {
     link.click();
     document.body.removeChild(link);
 }
+
+// GALLERY LIGHTBOX LOGIC
+const productGalleries = {
+    'sales': [
+        'images/sales_dashboard_preview_1.jpg',
+        'images/sales_dashboard_preview_2.jpg',
+        'images/sales_dashboard_preview_3.jpg',
+        'images/sales_dashboard_preview_4.jpg'
+    ],
+    'ups': [
+        'images/ups_calc_preview_1.jpg',
+        'images/ups_calc_preview_2.jpg'
+    ],
+    'tax': [
+        'images/tax_calc_preview_1.jpg',
+        'images/tax_calc_preview_2.jpg'
+    ],
+    'crm': [
+        'images/sales_crm_preview_1.jpg',
+        'images/sales_crm_preview_2.jpg',
+        'images/sales_crm_preview_3.jpg',
+        'images/sales_crm_preview_4.jpg',
+        'images/sales_crm_preview_5.jpg',
+        'images/sales_crm_preview_6.jpg',
+        'images/sales_crm_preview_7.jpg'
+    ]
+};
+
+let currentGallery = [];
+let currentImageIndex = 0;
+
+function openGallery(productKey, index = 0) {
+    if (productGalleries[productKey]) {
+        currentGallery = productGalleries[productKey];
+        currentImageIndex = index;
+        updateGalleryImage();
+        const modal = document.getElementById('galleryModal');
+        if (modal) {
+            modal.classList.add('active');
+            // Re-initialize feather icons inside modal if needed
+            if (typeof feather !== 'undefined') feather.replace();
+        }
+    } else {
+        console.error("Gallery not found for key:", productKey);
+    }
+}
+
+function closeGallery() {
+    const modal = document.getElementById('galleryModal');
+    if (modal) modal.classList.remove('active');
+}
+
+function updateGalleryImage() {
+    const imgElement = document.getElementById('galleryImage');
+    const counterElement = document.getElementById('galleryCounter');
+
+    if (imgElement && currentGallery.length > 0) {
+        imgElement.style.opacity = '0.5';
+        setTimeout(() => {
+            imgElement.src = currentGallery[currentImageIndex];
+            imgElement.style.opacity = '1';
+        }, 150);
+    }
+
+    if (counterElement && currentGallery.length > 0) {
+        counterElement.innerText = `${currentImageIndex + 1} / ${currentGallery.length}`;
+    }
+}
+
+function nextImage() {
+    if (currentGallery.length === 0) return;
+    currentImageIndex = (currentImageIndex + 1) % currentGallery.length;
+    updateGalleryImage();
+}
+
+function prevImage() {
+    if (currentGallery.length === 0) return;
+    currentImageIndex = (currentImageIndex - 1 + currentGallery.length) % currentGallery.length;
+    updateGalleryImage();
+}
+
+// Close gallery on outside click
+document.addEventListener('click', (e) => {
+    const galleryModal = document.getElementById('galleryModal');
+    if (e.target === galleryModal) {
+        closeGallery();
+    }
+});
