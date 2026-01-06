@@ -133,6 +133,13 @@ const productGalleries = {
         'images/sales_crm_preview_5.jpg',
         'images/sales_crm_preview_6.jpg',
         'images/sales_crm_preview_7.jpg'
+    ],
+    'warung': [
+        'images/warung_feat_stock.png',
+        'images/warung_feat_history.png',
+        'images/warung_feat_receipt.png',
+        'images/warung_feat_settings.png',
+        'images/warung_feat_debt.png'
     ]
 };
 
