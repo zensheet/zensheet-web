@@ -140,6 +140,19 @@ const productGalleries = {
         'images/warung_feat_receipt.png',
         'images/warung_feat_settings.png',
         'images/warung_feat_debt.png'
+    ],
+    'zenshoes': [
+        'images/zenshoes/cover_mockup.png',
+        'images/zenshoes/dashboard.png',
+        'images/zenshoes/order_detail.png',
+        'images/zenshoes/calendar.png',
+        'images/zenshoes/settings.png',
+        'images/zenshoes/services.png',
+        'images/zenshoes/feature_restock.png',
+        'images/zenshoes/feature_sync.png',
+        'images/zenshoes/feature_detail.png',
+        'images/zenshoes/feature_receipt.png',
+        'images/zenshoes/feature_whatsapp.png'
     ]
 };
 
