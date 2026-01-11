@@ -623,3 +623,56 @@ footer {
 .btn-submit:hover {
     background-color: #16a34a;
 }
+
+/* Service Banner (Premium Section) */
+.service-banner {
+    background: linear-gradient(135deg, #fdf4ff 0%, #fae8ff 100%);
+    border: 2px solid #d946ef;
+    border-radius: 16px;
+    padding: 3rem;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -5px rgba(217, 70, 239, 0.15);
+}
+
+.service-content {
+    flex: 2;
+    z-index: 10;
+}
+
+.service-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.service-badge {
+    background: #d946ef;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+    .service-banner {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    
+    .service-image {
+        width: 100%;
+    }
+}
