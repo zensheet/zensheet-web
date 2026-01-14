@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Antigravity Developer - Free Preview</title>
+    <meta name="description" content="Jago Bikin Aplikasi Tanpa Jago Coding - Baca sample chapter gratis!">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #ffffff;
+        }
+
+        .cover-page {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: -40px -20px 60px -20px;
+            padding: 0;
+        }
+
+        .cover-page img {
+            width: 100%;
+            max-width: 640px;
+            height: auto;
+            display: block;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Inter', sans-serif;
+            color: #2c3e50;
+            margin-top: 2em;
+            margin-bottom: 0.8em;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #d35400;
+            line-height: 1.2;
+            border-bottom: 3px solid #d35400;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #e67e22;
+            border-left: 5px solid #e67e22;
+            padding-left: 15px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: #3498db;
+        }
+
+        h4 {
+            font-size: 1.2em;
+            color: #16a085;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+
+        .image-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            border: 1px solid #ddd;
+        }
+
+        .caption {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        code {
+            background: #f1f2f6;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-family: 'Consolas', monospace;
+            color: #e74c3c;
+            font-size: 0.9em;
+        }
+
+        blockquote {
+            border-left: 5px solid #d35400;
+            margin: 25px 0;
+            padding: 15px 20px;
+            background: linear-gradient(to right, #fff5e6, transparent);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+        }
+
+        blockquote p {
+            margin: 5px 0;
+        }
+
+        hr {
+            border: 0;
+            border-top: 2px dashed #bdc3c7;
+            margin: 30px 0;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        b {
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            border-bottom: 1px solid #3498db;
+        }
+
+        a:hover {
+            color: #2980b9;
+            border-bottom-color: #2980b9;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 15px;
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cover -->
+    <div class="cover-page">
+        <img src="images/ebook-antigravity/cover_final_v2.png" alt="The Antigravity Developer - Preview">
+    </div>
+
+    <!-- Badge -->
+    <p
+        style="text-align: center; background: #3498db; color: white; padding: 10px; border-radius: 5px; font-family: 'Inter', sans-serif; font-weight: 600;">
+        📖 FREE PREVIEW - 3 Chapters
+    </p>
+
+    <!-- Content -->
+    <blockquote>
+        <p><b>Catatan Kecil Penulis (Disclaimer)</b></p>
+        <p></p>
+        <p>Buku ini ditulis bukan oleh seorang <i>Expert Programmer</i> atau <i>Full Stack Developer</i> yang hafal
+            ribuan syntax.</p>
+        <p></p>
+        <p>Saya hanyalah seorang "Pemecah Masalah" (Problem Solver) yang kebetulan menemukan alat bantu ajaib bernama
+            Antigravity.</p>
+        <p></p>
+        <p>Tujuan buku ini bukan untuk menggurui, melainkan berbagi pengalaman nyata (studi kasus) bagaimana orang awam
+            bisa merealisasikan idenya menjadi aplikasi yang berguna sehari-hari.</p>
+        <p></p>
+        <p>Anggaplah buku ini sebagai catatan perjalanan teman ngopi Anda. Jika ada teknik yang kurang "standar" menurut
+            kaidah IT, mohon dimaklumi. Masukan dan koreksi sangat saya hargai agar kita bisa belajar sama-sama.</p>
+    </blockquote>
+    <hr>
+    <h1>Bab 1: The "Lazy" Mindset</h1>
+    <h2>(Atau: Kenapa Aku Berhenti Belajar Syntax)</h2>
+    <p>Jujur saja, aku ini orang yang paling bodoh kalau urusan Matematika.</p>
+    <p>Jangankan disuruh ngerti algoritma coding yang njelimet, ngajarin anak PR matematika SD saja aku butuh effort
+        luar biasa. Padahal itu cuma hitung-hitungan sederhana. Rasanya otak ini nggak didesain buat mikir yang terlalu
+        abstrak.</p>
+    <p>Tapi anehnya, aku punya "penyakit" yang mungkin teman-teman juga rasakan: Aku suka banget sama dunia analisis.
+    </p>
+    <p>Di sela-sela rutinitas kerja kantor (yang scoope-nya itu-itu aja sesuai SOP), aku sering iseng ngulik data. Entah
+        itu data penjualan, data pengeluaran bulanan, atau sekadar data nggak penting lainnya.</p>
+    <p>Aku mencoba belajar Excel dari nol. Mulai dari fungsi sederhana SUM, lanjut ke menengah kayak VLOOKUP, sampai
+        level "dewa" kayak Pivot Table, fungsi IF bertingkat, dan Macro. Tapi jujur, otak saya sering nggak nyampe. Baru
+        sampai Macro, saya sering stres di tengah jalan. Error sedikit, bingung benerinnya. Hahaha.</p>
+    <p>Pantang menyerah, saya coba belajar Power BI. Belajar tools-nya, syntax DAX-nya, sampai akhirnya—entah gimana
+        caranya—jadi sebuah Dashboard. Wah, itu senangnya bukan main! Rasanya puas banget lihat grafik warna-warni yang
+        bisa gerak-gerak.</p>
+    <p>Tapi masalahnya, setiap kali aku coba naik level lagi—misalnya mau bikin aplikasi beneran (Web App) pencatat
+        otomatis—ujung-ujungnya balik lagi ke satu kata: KECEWA.</p>
+    <p>Ada satu pengalamanku yang paling memorable (baca: menyedihkan). Aku pernah coba bikin Kalkulator Hitung Harga
+        Logistik. Tujuannya simpel: Logic logistik itu rumit, jadi aku mau alat yang tinggal isi data, BOOM, keluar
+        hasilnya. Biar kerjaan mudah.</p>
+    <p>Aku develop ini pakai Excel. Berapa lama? Berbulan-bulan! Hahaha. Padahal waktu itu aku sudah pakai AI lho
+        (Gemini Gratisan). Aku minta AI bikinin rumus/fungsi, terus aku copy-paste ke sel Excel. Tapi tetap saja,
+        rasanya kayak Excel punya batasan. Logic-nya terlalu ribet buat diakomodasi, dan tampilannya ya... tetep Excel.
+        Nggak bisa dipoles jadi "Aplikasi Ganteng" kecuali pakai tools berbayar.</p>
+    <p>Aku pernah tahu juga waktu periode itu, ada AI tools yang bisa collect beberapa file, lalu dianalisis, dan BOOM
+        outputnya bisa jadi report yang ringkas. Tapi ya gitu, berbayar. Padahal ini AI yang aku butuhin banget.</p>
+    <p>Sampai akhirnya di bulan November, muncullah Antigravity. Rasanya kayak ketemu malaikat yang ngerti banget
+        kebutuhan saya.</p>
+    <p>Kenapa? Karena begitu mentok di teknis (error, rumus salah, coding merah semua), motivasi aku biasanya langsung
+        terjun bebas. Tapi dengan Antigravity, rasanya beda. "Sebenarnya gue lagi ngapain sih? Udah buang waktu
+        berjam-jam, hasilnya nihil. Apa faedahnya?"</p>
+    <p>Sampai akhirnya aku sadar satu hal.</p>
+    <p>Sebenarnya nggak ada yang salah dengan menjadi Tukang. Tapi masalahnya, aku nggak sadar kalau teknologi (AI) di
+        luar sana sudah segila itu. Maklum lah ya, boro-boro mikirin perkembangan AI, mikirin kerjaan kantor aja gak
+        beres-beres. Dasar mindset pekerja. Hehehe.</p>
+    <p>Jujur sih, dulu aku agak boring ngikutin AI. Karena kelihatannya gak jelas: cuma dipake buat bikin lucu-lucuan,
+        curhat gak jelas, atau tanya hal-hal aneh. Sekalinya ada yang bisa bikin gambar atau video, eh banyak batasan.
+        Masih belum sempurna. Voiceover-nya juga kaku. Jadinya aku wajar kalau kurang respect. "Ah, mainan doang,"
+        pikirku.</p>
+    <p>Tapi sekarang? Gila sih. AI itu udah gila, beneran gila. (Hahaha). Sekarang kondisinya sudah beda total. Massive
+        banget perkembangannya.</p>
+    <p>Di situlah aku sadar: Selama ini aku capek karena memaksa diriku menjadi TUKANG, padahal harusnya aku naik
+        pangkat jadi MANDOR.</p>
+    <h3>Tukang vs Mandor (Project Manager)</h3>
+    <p>Coba bayangkan kamu mau bangun rumah. Kalau kamu mau bangun rumah sendiri (tanpa tukang), kamu harus tahu:</p>
+    <ul>
+        <li> Takaran semen vs pasir yang pas.</li>
+        <li> Cara masang bata biar lurus.</li>
+        <li> Cara nyambung kabel listrik biar nggak korslet.</li>
+    </ul>
+    <p>Salah sedikit? Rumahmu roboh. Itu yang terjadi saat aku belajar coding manual (belajar syntax). Salah titik koma
+        (;) satu biji aja, aplikasinya meledak.</p>
+    <p>Tapi, gimana kalau kamu jadi Mandor atau Project Manager? Kamu nggak perlu tahu cara ngaduk semen. Yang kamu
+        perlu tahu cuma: "Pak, saya mau tembok sebelah sini warnanya putih, tingginya 3 meter, dan ada jendela di
+        tengahnya."</p>
+    <p>Kalau temboknya miring? Kamu tinggal teriak: "Pak, itu miring. Bongkar, lurusin lagi!"</p>
+    <p>Nah, AI (Artificial Intelligence) hari ini—entah itu ChatGPT, Claude, atau Gemini—adalah Tukang Paling Cerdas dan
+        Paling Sabar sedunia.</p>
+    <p>Mereka hafal jutaan baris kode. Mereka tahu takaran semen yang pas. Mereka nggak pernah capek disuruh bongkar
+        pasang 100 kali.</p>
+    <p>Kelemahan mereka cuma satu: Mereka nggak pernah inisiatif. Mereka butuh Mandor. Mereka butuh KAMU.</p>
+    <h3>The "Lazy" Mindset</h3>
+    <p>Jadi, rahasia pertamaku bisa bikin aplikasi kayak ZenSheet atau Kalkulator Ekspor Impor itu bukan karena aku jago
+        coding. Justru karena aku MALAS.</p>
+    <p>Aku malas ngafalin syntax HTML/CSS/JS. Aku malas nyari error di Google (StackOverflow).</p>
+    <p>Karena malas, aku mendelegasikan semua kerjaan "kuli" itu ke AI. Tugasku sekarang berubah drastis:</p>
+    <ul>
+        <li> Dulu: Ngetik kode baris per baris (Stess level: 100).</li>
+        <li> Sekarang: Memerintah, Mengecek, dan Meminta Revisi (Stress level: 10).</li>
+    </ul>
+    <p>Di buku ini, aku nggak akan ngajarin kamu jadi programmer yang jago algoritma. Itu urusan orang-orang jenius di
+        Silicon Valley.</p>
+    <p>Di sini, aku bakal ajarin kamu cara jadi Project Manager yang Galak tapi Efektif. Gimana caranya ngasih perintah
+        (Prompt) biar si "Tukang AI" ini nggak halu, nggak malas, dan beneran bikin aplikasi yang kita mau.</p>
+    <hr>
+    <h1>Bab 2: Persiapan "Senjata" (Antigravity App)</h1>
+    <h2>Instalasi Bengkel Ajaib Kita</h2>
+    <p>Di bab ini, kita akan langsung fokus menyiapkan satu-satunya alat tempur yang paling penting: <b>Antigravity
+            App</b>.</p>
+    <p>Ini adalah "bengkel" tempat kita akan menyuruh AI bekerja. Tanpa ini, kode-kode yang dibuat AI cuma akan jadi
+        teks bisu yang nggak bisa dipakai.</p>
+    <h3>Cara Install Antigravity App</h3>
+    <p>Ikuti panduan langkah demi langkah ini. Tenang, cuma butuh waktu 5 menit.</p>
+    <h4>Langkah 1: Cari di Google</h4>
+    <p>Buka Google, ketikan kata kunci: <b>"antigravity google"</b>.</p>
+    <p>Pilih hasil pencarian paling atas yang mengarah ke <code>antigravity.google</code>.</p>
+    <div class="image-container"><img src="images/ebook-antigravity/google_search_antigravity.png"
+            alt="Google Search Antigravity">
+        <p class="caption">Google Search Antigravity</p>
+    </div>
+    <h4>Langkah 2: Download</h4>
+    <p>Begitu masuk ke website resminya, cari tombol <b>Download</b> di pojok kanan atas (atau di tengah halaman). Klik
+        tombol tersebut.</p>
+    <div class="image-container"><img src="images/ebook-antigravity/download_button_antigravity.png"
+            alt="Tombol Download">
+        <p class="caption">Tombol Download</p>
+    </div>
+    <h4>Langkah 3: Pilih Versi Windows (PENTING!)</h4>
+    <p>Nah, di sini biasanya banyak yang bingung. Akan muncul pilihan untuk MacOS, Windows, dan Linux.</p>
+    <p>Karena kita pengguna Windows, perhatikan bagian <b>Windows</b>. Di sana ada pilihan "Download for x64" dan
+        "Download for ARM64".</p>
+    <p><b>Pilih yang: Download for x64.</b></p>
+    <div class="image-container"><img src="images/ebook-antigravity/platform_selection_antigravity.png"
+            alt="Pilih Versi x64">
+        <p class="caption">Pilih Versi x64</p>
+    </div>
+    <blockquote>
+        <p><b>"Mas, x64 itu apa sih?"</b></p>
+        <p></p>
+        <p>Penjelasan singkatnya: <b>x64</b> adalah arsitektur prosesor standar yang dipakai oleh hampir semua laptop/PC
+            Windows (Intel atau AMD) modern. Kalau laptopmu beli tahun 2010 ke atas, 99% pasti x64.</p>
+        <p></p>
+        <p>Jadi nggak usah pusing mikirin teknisnya. Pokoknya klik <b>x64</b>.</p>
+    </blockquote>
+    <h4>Langkah 4: Install</h4>
+    <p>Setelah file ter-download (biasanya berakhiran <code>.exe</code> atau <code>.msi</code>), klik dua kali file
+        tersebut. Ikuti saja instruksinya (Next, Next, Install) sampai selesai.</p>
+    <p>Begitu selesai, buka aplikasinya. Selamat! Bengkel ajaibmu sudah siap.</p>
+    <hr>
+    <h3>Mengenal Interface Antigravity</h3>
+    <p>Sebelum mulai bekerja, ada baiknya kita kenali dulu tampilan Antigravity. Ini akan membantu Anda lebih nyaman
+        saat nanti mulai "tek-tok" dengan AI.</p>
+    <h4>Dua Panel Utama</h4>
+    <p>Begitu aplikasi terbuka, Anda akan melihat layar terbagi menjadi dua bagian besar:</p>
+    <div class="image-container"><img src="images/ebook-antigravity/ui_antigravity/01_two_panel_interface.png"
+            alt="Tampilan 2-Panel Antigravity">
+        <p class="caption">Tampilan 2-Panel Antigravity</p>
+    </div>
+    <p><b>Panel Kiri: Workspace (Area Kerja)</b></p>
+    <p>Ini tempat di mana kode dan file project Anda ditampilkan. Ada dua tab biasanya:</p>
+    <ul>
+        <li><b>Code</b>: Menampilkan source code (HTML, CSS, JavaScript, dll)</li>
+        <li><b>Preview</b>: Menampilkan hasil aplikasi yang sedang dibuat</li>
+    </ul>
+    <p>Fokus Anda di panel kiri ini adalah untuk <b>MELIHAT HASIL</b>, bukan edit manual. Biarkan AI yang ngurusin
+        code-nya.</p>
+    <p><b>Panel Kanan: Chat (Obrolan dengan AI)</b></p>
+    <p>Ini adalah tempat Anda mengetik perintah. Interface-nya mirip WhatsApp:</p>
+    <ul>
+        <li>Ada kolom kecil di bawah untuk menulis prompt</li>
+        <li>AI akan merespons di atas kolom tersebut</li>
+        <li>Conversation history tersimpan, bisa scroll ke atas untuk lihat percakapan sebelumnya</li>
+    </ul>
+    <hr>
+    <h3>Workflow: Accept, Reject, atau Always Proceed?</h3>
+    <p>Saat AI selesai memproses request Anda dan menghasilkan code, biasanya akan muncul notifikasi yang menanyakan
+        persetujuan.</p>
+    <div class="image-container"><img src="images/ebook-antigravity/ui_antigravity/02_accept_button.png"
+            alt="Accept Button Workflow">
+        <p class="caption">Accept Button Workflow</p>
+    </div>
+    <p>Anda akan melihat 2 pilihan utama:</p>
+    <li><b>"Accept"</b> (biru) - Klik ini kalau Anda setuju dengan perubahan yang diusulkan AI</li>
+    <li><b>"Reject all"</b> - Klik ini kalau Anda tidak setuju dan ingin batalkan perubahan</li>
+    <p><b>Tip Praktis:</b></p>
+    <p>Untuk project pembelajaran atau eksperimen, biasanya langsung klik <b>Accept</b> saja. AI jarang ngasih code yang
+        merusak. Kalau ada bug, nanti tinggal minta AI buat fix lagi.</p>
+    <h4>Opsi "Always Proceed" untuk Workflow Lebih Cepat</h4>
+    <p>Kalau Anda merasa bolak-balik klik Accept itu memperlambat workflow, ada solusinya:</p>
+    <div class="image-container"><img src="images/ebook-antigravity/ui_antigravity/05_always_proceed.png"
+            alt="Always Proceed Option">
+        <p class="caption">Always Proceed Option</p>
+    </div>
+    <p>Pada notification box, ada opsi <b>"Always Proceed"</b> - ketika Anda enable ini, AI akan otomatis apply semua
+        perubahan tanpa konfirmasi lagi.</p>
+    <p><b>Kapan pakai Always Proceed?</b></p>
+    <ul>
+        <li>Ketika Anda sedang iterasi cepat (testing ide, coba-coba fitur)</li>
+        <li>Ketika Anda percaya diri dengan prompt yang Anda berikan</li>
+        <li>Ketika Anda tidak khawatir dengan perubahan yang destructive (karena bisa di-undo)</li>
+    </ul>
+    <p><b>Kapan JANGAN pakai Always Proceed?</b></p>
+    <ul>
+        <li>Ketika project sudah production/dipakai orang lain</li>
+        <li>Ketika request Anda kompleks dan butuh review manual</li>
+        <li>Ketika Anda masih belajar dan ingin tahu apa yang AI ubah</li>
+    </ul>
+    <hr>
+    <h3>Troubleshooting: Masalah Umum dan Solusinya</h3>
+    <h4>1. Stuck di "Running..." Tidak Bergerak</h4>
+    <div class="image-container"><img src="images/ebook-antigravity/ui_antigravity/04_running_stuck.png"
+            alt="Running Stuck Issue">
+        <p class="caption">Running Stuck Issue</p>
+    </div>
+    <p><b>Masalah:</b> Anda lihat tulisan "Running..." di bawah layar, tapi tidak ada progress sama sekali.</p>
+    <p><b>Penyebab:</b> Biasanya ini karena ada <b>Accept button yang belum diklik</b> di atas.</p>
+    <p><b>Solusi:</b></p>
+    <p>Scroll ke atas di panel chat → Cari kotak biru "Accept" → Klik "Accept"</p>
+    <p>Setelah diklik, AI akan lanjut proses. Jadi kalau stuck, <b>selalu cek dulu ke atas</b> apakah ada yang perlu
+        di-approve.</p>
+    <hr>
+    <h4>2. Error "Agent Terminated Due to Error"</h4>
+    <div class="image-container"><img src="images/ebook-antigravity/ui_antigravity/06_retry_error.png"
+            alt="Retry Button for Connection Error">
+        <p class="caption">Retry Button for Connection Error</p>
+    </div>
+    <p><b>Masalah:</b> Muncul notifikasi error merah dengan tulisan "Agent execution terminated due to error"</p>
+    <p><b>Penyebab:</b></p>
+    <p>Biasanya ini terjadi karena:</p>
+    <ul>
+        <li>Koneksi internet terputus/tidak stabil</li>
+        <li>Server AI sedang overload</li>
+        <li>Request terlalu kompleks/berat untuk diproses</li>
+    </ul>
+    <p><b>Solusi:</b></p>
+    <p>Klik tombol <b>"Retry"</b> (biru) di pojok kanan bawah notification.</p>
+    <p>AI akan mencoba ulang request terakhir Anda. Kalau masih error setelah 2-3x retry, coba:</p>
+    <li>Refresh browser/restart Antigravity</li>
+    <li>Cek koneksi internet Anda</li>
+    <li>Coba ganti model AI (misal dari Gemini ke Claude)</li>
+    <li>Sederhanakan prompt Anda (pecah jadi beberapa step kecil)</li>
+    <hr>
+    <h4>3. Quota Limit Habis</h4>
+    <div class="image-container"><img src="images/ebook-antigravity/ui_antigravity/03_quota_limit.png"
+            alt="Quota Limit Error">
+        <p class="caption">Quota Limit Error</p>
+    </div>
+    <p><b>Masalah:</b> Muncul error "You have reached the quota limit for this model"</p>
+    <p><b>Penyebab:</b> Setiap model AI punya limit penggunaan gratis (daily/weekly)</p>
+    <p><b>Solusi:</b></p>
+    <li><b>Ganti model lain</b> - Kalau Gemini 3 Pro habis, coba pakai Claude Sonnet</li>
+    <li><b>Tunggu reset</b> - Quota akan reset sesuai periode (harian/mingguan)</li>
+    <li><b>Pakai model lebih hemat</b> - Untuk task sederhana, pakai Gemini Flash</li>
+    <p><b>Strategi Hemat Quota:</b></p>
+    <ul>
+        <li>Brainstorming awal pakai ChatGPT/Gemini web dulu (di luar Antigravity)</li>
+        <li>Baru masuk Antigravity ketika konsep sudah matang</li>
+        <li>Pakai model "Flash" atau "Low" untuk perubahan simpel (UI, styling)</li>
+        <li>Save model "High" atau "Thinking" untuk logic kompleks saja</li>
+    </ul>
+    <hr>
+    <h3>Memilih "Otak" AI (PENTING!)</h3>
+    <p>Di bagian bawah aplikasi (lihat baris paling bawah), kamu akan melihat sebuah menu pilihan. Ini adalah tempat
+        kita memilih <b>Model AI</b> alias "Otak" yang akan mengerjakan perintah kita.</p>
+    <div class="image-container"><img src="images/ebook-antigravity/model_selector_ui.png" alt="Model Selector UI">
+        <p class="caption">Model Selector UI</p>
+    </div>
+    <p>Saat ini ada 3 "Dewa AI" utama di dunia:</p>
+    <li> <b>Gemini</b> (Buatan Google)</li>
+    <li> <b>Claude</b> (Buatan Anthropic)</li>
+    <li> <b>GPT</b> (Buatan OpenAI)</li>
+    <p>Bingung pilih yang mana?</p>
+    <blockquote>
+        <p><b>Saran Saya: Pakai saja "Gemini 3".</b></p>
+    </blockquote>
+    <p>Kenapa?</p>
+    <ul>
+        <li> <b>Cepat & Pintar:</b> Cocok banget buat koding sehari-hari.</li>
+        <li> <b>GRATIS:</b> Kamu bisa pakai ini tanpa bayar sepeser pun.</li>
+    </ul>
+    <p><b>"Mas, kok pilihannya banyak banget? Bedanya apa?"</b></p>
+    <p>Kalau kamu klik menunya, mungkin akan muncul daftar panjang seperti:</p>
+    <ul>
+        <li> Gemini 3 Pro (High)</li>
+        <li> Gemini 3 Pro (Low)</li>
+        <li> Gemini 3 Flash</li>
+        <li> Claude Sonnet 4.5 (Thinking)</li>
+        <li> GPT OSS 120B</li>
+    </ul>
+    <p><b>Rumus gampangnya begini:</b></p>
+    <p>Makin "Tinggi" levelnya (High/Opus/Thinking), makin <b>PINTAR</b> dia. Makin jago memahami logika yang njelimet.
+    </p>
+    <p>Tapi... ada harganya:</p>
+    <li> <b>Kuota lebih cepat habis.</b></li>
+    <li> <b>Mikirnya lebih lama.</b></li>
+    <p><b>Bocoran Limit (Kuota Gratis):</b></p>
+    <li> <b>Gemini 3 Pro (High):</b></li>
+    <ul>
+        <li> Sistem kuotanya <b>MINGGUAN (7 Hari)</b>.</li>
+        <li> Jadi kalau hari Senin kamu pakai habis-habisan sampai limit, kamu baru bisa pakai lagi Senin depan.
+            <i>Hati-hati ya!</i>
+        </li>
+    </ul>
+    <li> <b>Gemini 3 Pro (Low) / Flash:</b></li>
+    <ul>
+        <li> Sistem kuotanya <b>HARIAN (Reset tiap pagi/tengah malam)</b>.</li>
+        <li> Ini yang paling aman buat eksperimen barbar. Habis hari ini, besok isi lagi.</li>
+    </ul>
+    <li> <b>Claude & Thinking Models (Opus/Sonnet):</b></li>
+    <ul>
+        <li> Limitnya <b>SANGAT SEDIKIT (Harian)</b>.</li>
+        <li> Karena ini model mahal, gunakan hanya untuk "kartu As" di momen krusial (misal: saat Gemini High gak nemu
+            solusi).</li>
+    </ul>
+    <p><b>Panduan Memilih:</b></p>
+    <ul>
+        <li> <b>Gemini 3 Pro (Low) / Flash:</b> Pakai ini buat sehari-hari. Cepat, irit kuota. Cocok buat bikin tampilan
+            (HTML/CSS) atau fitur simpel.</li>
+        <li> <b>Gemini 3 Pro (High) / Claude Sonnet:</b> Pakai ini kalau si Low mulai "bego" atau error terus. Ini
+            ibarat "Mandor Senior".</li>
+        <li> <b>Thinking Models (Opus/Sonnet Thinking):</b> Ini "Profesor". Pakai ini kalau kamu mentok total atau mau
+            bikin logika bisnis yang super rumit. Dia bakal mikir lamaaa banget sebelum jawab, tapi hasilnya biasanya
+            presisi.</li>
+    </ul>
+    <blockquote>
+        <p><b>Strategi Hemat:</b></p>
+        <p>Mulai dulu pakai yang <b>Low/Flash</b>. Kalau error, baru naik kelas ke <b>High</b>. Kalau masih error,
+            panggil sang <b>Profesor (Thinking)</b>.</p>
+    </blockquote>
+    <p>Jadi, pastikan di pojok bawah aplikasimu terpilih: <b>Gemini 3 Pro (Low/High)</b> untuk awal.</p>
+    <hr>
+    <h3>Rahasia "Premium Gratisan" (Gemini Advanced)</h3>
+    <p>Saat buku ini ditulis, Google menawarkan paket <b>Gemini Advanced</b> seharga <b>Rp 309.000 / bulan</b>.</p>
+    <p>Tapi tenang, biasanya ada <b>Free Trial 30 Hari Pertama</b>.</p>
+    <blockquote>
+        <p><b>Tips "Nakal" Hemat Budget:</b></p>
+        <p>Promosi ini berlaku per akun Google.</p>
+        <p>Jadi, kalau masa trial 30 harimu habis dan kamu belum rela bayar...</p>
+        <p></p>
+        <p>1. Bikin akun Google (Gmail) baru.</p>
+        <p>2. Login ulang di Antigravity pakai akun baru itu.</p>
+        <p>3. <b>Boom!</b> Dapat gratis 30 hari lagi.</p>
+        <p></p>
+        <p><i>(Jangan bilang siapa-siapa ya, ini rahasia kita aja.)</i></p>
+    </blockquote>
+    <hr>
+    <p>Mari kita mulai "mempekerjakan" mereka!</p>
+    <hr>
+    <h1>Bab 3.5: Melihat Proses Sebenarnya - Brainstorming sampai Debugging</h1>
+    <h2>(Dokumentasi Lengkap: Tek-Tok dengan AI)</h2>
+    <p>Di bab sebelumnya saya sudah menjelaskan teori tentang bagaimana berkomunikasi dengan AI. Sekarang saya ingin
+        menunjukkan seperti apa proses sebenarnya ketika membuat aplikasi - dari awal sampai selesai.</p>
+    <p>Ini adalah dokumentasi nyata ketika saya membuat aplikasi <b>"Dr. Anti Bokek"</b> - sebuah personal finance
+        tracker untuk tracking keuangan harian. Semua screenshot di sini adalah capture asli dari percakapan saya dengan
+        Antigravity.</p>
+    <h3>Apa itu Dr. Anti Bokek?</h3>
+    <p><b>Dr. Anti Bokek</b> adalah aplikasi web sederhana untuk membantu saya mengelola keuangan personal sehari-hari.
+    </p>
+    <p><b>Masalah yang ingin diselesaikan:</b></p>
+    <ul>
+        <li>Saya punya budget bulanan yang sudah terstruktur (fixed expenses, wants, savings)</li>
+        <li>Tapi saya kesulitan tracking pengeluaran <b>harian</b> - apakah saya masih "on track" atau sudah "tekor"
+        </li>
+        <li>Kadang di akhir bulan baru sadar ternyata sudah overspending</li>
+    </ul>
+    <p><b>Solusi yang diusulkan AI:</b></p>
+    <ul>
+        <li>Dashboard keuangan yang menampilkan "Jatah Harian" (daily allowance)</li>
+        <li>Input cepat untuk catat pengeluaran dengan "Fast Action Button" (tombol Suntik 💉)</li>
+        <li>Feedback real-time: masih "Lebih Hemat" atau sudah "Tekor"</li>
+        <li>Gamifikasi dengan komentar "Dokter" yang kasih saran (makanya namanya Dr. Anti Bokek)</li>
+    </ul>
+    <p>Ini bukan aplikasi kompleks seperti Mint atau YNAB. Ini tool personal yang sangat spesifik untuk kebutuhan saya -
+        <b>tracking harian dengan mindful spending</b>.
+    </p>
+    <p>Dan saya membuatnya <b>tanpa menulis satu baris code pun secara manual</b>. Semua dikerjakan AI, mulai dari
+        brainstorming konsep sampai bug fixing.</p>
+    <p>Mari kita lihat prosesnya step-by-step:</p>
+    <hr>
+    <h2>1. Brainstorming: Meminta IDE dari AI</h2>
+    <p>Saya tidak selalu tahu persis aplikasi seperti apa yang saya butuhkan. Kadang saya hanya punya problem statement
+        yang samar-samar.</p>
+    <p>Untuk Dr. Anti Bokek, masalah saya sederhana: saya kesulitan tracking pengeluaran harian, padahal untuk budgeting
+        bulanan saya sudah punya worksheet yang cukup detail.</p>
+    <p>Jadi saya mulai dengan bertanya ke AI:</p>
+    <div class="image-container"><img src="images/ebook-antigravity/workflow_drab/01_brainstorming.png"
+            alt="Brainstorming Phase - Meminta IDE">
+        <p class="caption">Brainstorming Phase - Meminta IDE</p>
+    </div>
+    <p><i>"Saya punya ide untuk aplikasi tracking keuangan harian yang bisa sinkron dengan worksheet budgeting bulanan.
+            Kamu ada ide untuk brainstorming?"</i></p>
+    <p>Yang menarik: saya tidak langsung minta "buatkan aplikasi X dengan fitur Y dan Z".</p>
+    <p>Saya minta AI untuk ikut <b>berpikir</b> bersama saya mengenai konsep yang tepat.</p>
+    <hr>
+    <h2>2. AI Memberikan Planning Detail</h2>
+    <p>Setelah memahami problem statement saya, AI tidak langsung ngoding. AI memberikan proposal konsep terlebih
+        dahulu:</p>
+    <div class="image-container"><img src="images/ebook-antigravity/workflow_drab/02_ai_planning.png"
+            alt="AI Planning Response - Concept Breakdown">
+        <p class="caption">AI Planning Response - Concept Breakdown</p>
+    </div>
+    <p>Di sini AI menyarankan konsep "Rawat Jalan Harian" - sebuah metode tracking pengeluaran harian yang bisa
+        di-bridge ke monthly budgeting.</p>
+    <p>Perhatikan detailnya:</p>
+    <ul>
+        <li>Fast Action Button untuk input cepat</li>
+        <li>Gamifikasi "Daily Allowance" dengan visual feedback</li>
+        <li>Komentar "Dokter" yang memberikan saran (makanya namanya Dr. Anti Bokek)</li>
+        <li>Dashboard progress Budget vs Kenyataan</li>
+    </ul>
+    <p>Saya bahkan tidak memikirkan semua itu di awal. AI yang mengusulkan.</p>
+    <hr>
+    <h2>3. Approval dan Implementation Plan</h2>
+    <p>Setelah membaca proposal AI, saya merasa konsepnya bagus. Jadi saya approve:</p>
+    <p><i>"Ide menarik, Bro! Market 'pencatatan detail' memang lebih mindful. Mari kita eksekusi dengan Rawat Jalan
+            Harian concept."</i></p>
+    <p>Kemudian AI membuat implementation plan yang lebih teknis:</p>
+    <div class="image-container"><img src="images/ebook-antigravity/workflow_drab/03_approval_plan.png"
+            alt="Approval & Implementation Plan">
+        <p class="caption">Approval & Implementation Plan</p>
+    </div>
+    <p>AI secara otomatis membuat file <code>implementation_plan.md</code> yang berisi:</p>
+    <ul>
+        <li>UI Baru: Tombol Suntik (FAB), Panel Jatah Harian, Modal Input</li>
+        <li>Logika Gamifikasi: Sistem hitung budget per hari</li>
+        <li>Integrasi dengan code existing</li>
+    </ul>
+    <p>Yang penting untuk dicatat: <b>saya tidak perlu tahu detail teknis ini</b>.</p>
+    <p>AI yang membuat planning, saya hanya perlu "oke gas" atau "tunggu, ini perlu diubah".</p>
+    <hr>
+    <h2>4. Implementation: Fitur Ditambahkan</h2>
+    <p>Setelah plan disetujui, AI mulai mengimplementasikan fitur-fitur tersebut:</p>
+    <div class="image-container"><img src="images/ebook-antigravity/workflow_drab/04_implementation.png"
+            alt="Implementation Summary">
+        <p class="caption">Implementation Summary</p>
+    </div>
+    <p>Dalam beberapa menit, AI sudah selesai menambahkan:</p>
+    <li>Tombol Suntik (Fast Action Button) dengan icon jarum</li>
+    <li>Gamifikasi Dokter dengan real-time feedback</li>
+    <li>Jatah Harian Card yang menampilkan sisa budget</li>
+    <p>Saya hanya scroll membaca summary-nya. Belum ngecek hasilnya di browser.</p>
+    <hr>
+    <h2>5. Testing & Debugging: Ketika Ada Error</h2>
+    <p>Ini bagian yang paling penting untuk dipahami: <b>tidak selalu langsung sempurna</b>.</p>
+    <p>Saat saya buka hasil code nya di browser dan tekan F12 (Chrome DevTools), saya melihat ada error:</p>
+    <div class="image-container"><img src="images/ebook-antigravity/workflow_drab/05_debugging.png"
+            alt="Debugging Phase - Screenshot Error Console">
+        <p class="caption">Debugging Phase - Screenshot Error Console</p>
+    </div>
+    <p>Error: <code>formatMoney is not defined</code></p>
+    <p>Daripada saya coba cari-cari code mana yang salah atau googling "how to fix formatMoney error", saya langsung
+        screenshot console error nya dan paste ke Antigravity dengan caption:</p>
+    <p><i>"banyak banget bug nya"</i></p>
+    <p>Dan dalam beberapa detik, AI langsung:</p>
+    <li>Mendeteksi error dari screenshot (fungsi <code>formatMoney</code> belum didefinisikan)</li>
+    <li>Mengidentifikasi akar masalahnya</li>
+    <li>Memperbaiki code</li>
+    <li>Menjelaskan apa yang diperbaiki</li>
+    <p>Hasilnya: error hilang. Simulasi "Harga sebelum & sesudah" muncul normal.</p>
+    <hr>
+    <h2>Pelajaran dari Proses Ini</h2>
+    <h3>1. Brainstorming Bersama AI Itu Valuable</h3>
+    <p>Saya tidak perlu datang dengan design document yang sempurna. AI bisa membantu mematangkan ide yang masih mentah.
+    </p>
+    <p>Yang saya lakukan hanya menjelaskan masalah saya dengan jujur. AI yang suggest solusi.</p>
+    <h3>2. Approval Loop Membuat Saya Tetap Kontrol</h3>
+    <p>AI tidak langsung ngerjakan tanpa konfirmasi. Ada fase:</p>
+    <ul>
+        <li>Proposal Concept → Saya review → Approve/Revise</li>
+        <li>Implementation Plan → Saya review → Proceed</li>
+        <li>Code Generated → Saya test → Report bugs (kalau ada)</li>
+    </ul>
+    <p>Jadi saya tetap yang pegang kendali, bukan AI yang ngacak-ngacak.</p>
+    <h3>3. Debugging Itu Mudah dengan Screenshot</h3>
+    <p>Tidak perlu paham error message yang cryptic. Screenshot console → paste → AI fix.</p>
+    <p>Ini menurunkan barrier untuk pemula. Kita tidak perlu "lancar bahasa error".</p>
+    <h3>4. Proses Iteratif, Bukan One-Shot Perfect</h3>
+    <p>Aplikasi tidak langsung jadi sempurna. Ada phases:</p>
+    <ul>
+        <li>User ask</li>
+        <li>AI propose</li>
+        <li>User review</li>
+        <li>AI implement</li>
+        <li>User test</li>
+        <li>(kalau ada bug) User screenshot → AI fix</li>
+    </ul>
+    <p>Dan itu normal. Yang penting prosesnya smooth.</p>
+    <hr>
+    <h2>Kesimpulan</h2>
+    <p>Ini adalah dokumentasi nyata dari proses saya membuat aplikasi. Tidak di-edit, tidak dishortcut. Persis seperti
+        ini lah cara kerjanya.</p>
+    <p>Dan yang perlu saya lakukan hanyalah:</p>
+    <li><b>Menjelaskan masalah</b> dengan jelas</li>
+    <li><b>Membaca proposal</b> AI dengan teliti</li>
+    <li><b>Testing hasil</b> dengan jujur (screenshot kalau ada bug)</li>
+    <p>Tidak ada satu baris code pun yang saya tulis manual.</p>
+    <p>Tidak ada satu error message pun yang saya debug sendiri.</p>
+    <p>Tidak ada dokumentasi framework yang saya baca.</p>
+    <p>Semua yang saya butuhkan adalah kemampuan untuk <b>berkomunikasi masalah dengan baik</b>.</p>
+    <p>Itu saja.</p>
+    <hr>
+    <p><b>Bab selanjutnya:</b> Studi Kasus UPS Calculator - Aplikasi dengan 14 Logika Kompleks</p>
+    <hr>
+    <h1>Ingin Lanjut Baca?</h1>
+    <p>Anda baru saja membaca <b>3 chapter gratis</b> dari ebook "The Antigravity Developer".</p>
+    <h2>Yang Belum Anda Baca:</h2>
+    <h3>📘 Bab 4: Studi Kasus - Kalkulator UPS (14 Logika Kompleks)</h3>
+    <p>Lihat bagaimana aplikasi dengan 14 conditional logic yang saling terkait dibuat dalam waktu singkat, lengkap
+        dengan planning notes asli dan breakdown kompleksitas.</p>
+    <h3>🐛 Bab 5: Debugging - Ketika Ada Yang Tidak Sesuai</h3>
+    <p>Teknik "screenshot error → paste → AI fix" yang membuat debugging semudah copy-paste. Tidak perlu paham error
+        message yang cryptic.</p>
+    <h3>🚀 Bab 6: Finishing & Deploy</h3>
+    <p>Cara deploy aplikasi AI-generated ke production dengan berbagai opsi (Netlify, Vercel, GitHub Pages, atau hosting
+        tradisional).</p>
+    <h3>🎁 Bonus: Prompt Cheatsheet</h3>
+    <p>Template prompt siap pakai untuk berbagai kebutuhan - dari bikin CRUD app sampai debugging performance issues.
+    </p>
+    <hr>
+    <h2>Download Full Version</h2>
+    <p><b>Harga:</b> Rp 50.000</p>
+    <p><b>Format:</b> HTML (responsive, bisa dibaca offline)</p>
+    <p><b>Bonus:</b> Lifetime updates</p>
+    <p style="text-align: center; margin: 30px 0;">
+        👉 <b><a href="https://lynk.id/exportimport/gg7z18l170y1/checkout?token=cGFyYW1zPSU1QiU1RCZiaWRfcHJpY2U9MCZxdHlfcHJvZD0x"
+                style="background: #d35400; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-size: 1.1em; display: inline-block;">Download
+                Sekarang</a></b>
+    </p>
+    <p style="text-align: center; font-size: 0.9em; color: #7f8c8d;">
+        <i>Pembayaran aman via Lynk.id - Semua metode pembayaran tersedia</i>
+    </p>
+    <hr>
+    <p><i>Punya pertanyaan? Email: zensheet.id@gmail.com</i></p>
+
+    <hr>
+    <p style="text-align: center; color: #95a5a6; font-size: 0.9em;">
+        <i>The Antigravity Developer © 2026</i>
+    </p>
+</body>
+
+</html>
