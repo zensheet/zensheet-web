@@ -152,7 +152,9 @@ const productGalleries = {
         'images/zenshoes/feature_sync.png',
         'images/zenshoes/feature_detail.png',
         'images/zenshoes/feature_receipt.png',
-        'images/zenshoes/feature_whatsapp.png'
+        'images/zenshoes/feature_whatsapp.png',
+        'images/zenshoes/feature_notif_overdue.png',
+        'images/zenshoes/feature_notif_today.png'
     ]
 };
 
