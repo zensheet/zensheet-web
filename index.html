@@ -22,6 +22,25 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo_icon.png">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ZenSheet",
+      "description": "Koleksi tools digital premium untuk produktivitas yang seimbang.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "50000",
+        "priceCurrency": "IDR"
+      },
+      "url": "https://zensheet.my.id",
+      "image": "https://zensheet.my.id/images/logo_icon.png"
+    }
+    </script>
 </head>
 
 <body>
@@ -76,7 +95,8 @@
                     <article class="product-card" style="border: 2px solid #818cf8;">
                         <div class="card-image" onclick="window.location.href='details_ai_guide.html'"
                             style="cursor: pointer; position: relative;" title="Lihat Detail">
-                            <img src="images/mockup_book_sitting.png" alt="The Antigravity Developer" loading="lazy">
+                            <img src="images/mockup_book_sitting.png" alt="The Antigravity Developer" loading="lazy"
+                                decoding="async">
                             <div class="gallery-overlay">
                                 <span style="font-size: 0.8rem; font-weight: 600;">NEW RELEASE</span>
                             </div>
@@ -135,7 +155,7 @@
                         <div class="card-image" onclick="openGallery('zenshoes', 0)"
                             style="background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);">
                             <img src="images/zenshoes/cover_mockup.png" alt="Zen Shoes Clean Dashboard" loading="lazy"
-                                style="object-fit: contain; padding: 10px; width: 100%; height: 100%;">
+                                decoding="async" style="object-fit: contain; padding: 10px; width: 100%; height: 100%;">
                             <div class="gallery-overlay">
                                 <i data-feather="image" style="width: 12px; height: 12px;"></i> 10 Foto
                             </div>
@@ -193,7 +213,8 @@
                     <!-- Product 0: EBOOK (Grid Format) -->
                     <article class="product-card" style="border: 2px solid #22c55e;">
                         <div class="card-image">
-                            <img src="images/cover_ebook_enhanced.png" alt="The Art of Uncomplicating" loading="lazy">
+                            <img src="images/cover_ebook_enhanced.png" alt="The Art of Uncomplicating" loading="lazy"
+                                decoding="async">
                         </div>
                         <div class="card-body">
                             <span class="category" style="color: #22c55e;">EBOOK</span>
@@ -233,7 +254,8 @@
                     <article class="product-card" style="border: 2px solid #0ea5e9;">
                         <div class="card-image" onclick="openGallery('warung', 0)"
                             style="cursor: pointer; position: relative;" title="Lihat Preview">
-                            <img src="images/warung_app.png" alt="Aplikasi Kasir Warung Modern" loading="lazy">
+                            <img src="images/warung_app.png" alt="Aplikasi Kasir Warung Modern" loading="lazy"
+                                decoding="async">
                             <div
                                 style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; display: flex; align-items: center; gap: 4px;">
                                 <i data-feather="image" style="width: 12px; height: 12px;"></i> 5 Foto
@@ -283,7 +305,8 @@
                     <article class="product-card" style="border: 2px solid #2563eb;">
                         <div class="card-image" onclick="openGallery('sales', 0)"
                             style="cursor: pointer; position: relative;" title="Lihat Preview">
-                            <img src="images/cover_sales_dashboard.png" alt="Sales Dashboard Tracker" loading="lazy">
+                            <img src="images/cover_sales_dashboard.png" alt="Sales Dashboard Tracker" loading="lazy"
+                                decoding="async">
                             <div
                                 style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; display: flex; align-items: center; gap: 4px;">
                                 <i data-feather="image" style="width: 12px; height: 12px;"></i> 4 Foto
@@ -333,7 +356,8 @@
                     <article class="product-card">
                         <div class="card-image" onclick="openGallery('ups', 0)"
                             style="cursor: pointer; position: relative;" title="Lihat Preview">
-                            <img src="images/cover_ups_calc.png?v=2" alt="UPS Express Rate Calculator" loading="lazy">
+                            <img src="images/cover_ups_calc.png?v=2" alt="UPS Express Rate Calculator" loading="lazy"
+                                decoding="async">
                             <div
                                 style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; display: flex; align-items: center; gap: 4px;">
                                 <i data-feather="image" style="width: 12px; height: 12px;"></i> 2 Foto
@@ -384,7 +408,7 @@
                         <div class="card-image" onclick="openGallery('tax', 0)"
                             style="cursor: pointer; position: relative;" title="Lihat Preview">
                             <img src="images/cover_tax_calc.png?v=2" alt="Import Duty & Tax Calculator Indonesia"
-                                loading="lazy">
+                                loading="lazy" decoding="async">
                             <div
                                 style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; display: flex; align-items: center; gap: 4px;">
                                 <i data-feather="image" style="width: 12px; height: 12px;"></i> 2 Foto
@@ -434,7 +458,8 @@
                     <article class="product-card">
                         <div class="card-image" onclick="openGallery('crm', 0)"
                             style="cursor: pointer; position: relative;" title="Lihat Preview">
-                            <img src="images/cover_sales_crm_v3.png" alt="SalesCRM Offline" loading="lazy">
+                            <img src="images/cover_sales_crm_v3.png" alt="SalesCRM Offline" loading="lazy"
+                                decoding="async">
                             <div
                                 style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; display: flex; align-items: center; gap: 4px;">
                                 <i data-feather="image" style="width: 12px; height: 12px;"></i> 7 Foto
@@ -483,7 +508,8 @@
                     <!-- Product 4: Ebook Padel Import -->
                     <article class="product-card">
                         <div class="card-image">
-                            <img src="images/cover_ebook_padel_v3.png" alt="Panduan Impor Raket Padel" loading="lazy">
+                            <img src="images/cover_ebook_padel_v3.png" alt="Panduan Impor Raket Padel" loading="lazy"
+                                decoding="async">
                         </div>
                         <div class="card-body">
                             <span class="category">Ebook Guide</span>
@@ -659,14 +685,19 @@
     </div>
 
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
     <!-- Google Sheets CMS -->
-    <script src="cms-config.js"></script>
-    <script src="cms-loader.js"></script>
+    <script src="cms-config.js" defer></script>
+    <!-- Supabase Integration -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="supabase.js" defer></script>
+    <script src="cms-loader.js" defer></script>
 
     <script>
-        feather.replace();
+        document.addEventListener('DOMContentLoaded', () => {
+            feather.replace();
+        });
     </script>
 </body>
 
